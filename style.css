@@ -1,0 +1,185 @@
+#interact {
+  position: absolute;
+  top: 1px; left: 380px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+/*\ Inbox Button \*/
+
+#home {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid;
+  border-color: black;
+  border-radius: 9px;
+}
+
+#bell {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  flex-shrink: 0;
+
+  transition: width 120ms, height 120ms;
+}
+
+#bell:hover {
+  width: 34px;
+  height: 34px;
+}
+
+
+
+/*\ Notificator \*/
+
+#invisBox {
+  width: 13px;
+  height: 15px;
+  z-index: 1;
+
+  position: absolute;
+  top: -12px; left: 29px;
+
+  border: 5px solid;
+  background-color: white;
+  border-color: white;
+  border-radius: 50%;
+}
+
+#pinger {
+  width: 10px;
+  height: 10px;
+
+  border: 3px solid;
+  flex-shrink: 0;
+  background-color: red;
+  border-color: red;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#notif {
+  color: white;
+  flex-shrink: 0;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+
+
+/*\ Inbox \*/
+
+
+  /*\ Pointer \*/
+
+#pointer {
+  width: 50px; 
+  height: 50px;
+
+  position: absolute;
+  top: 10px; left: 60px;
+  transition: left 120ms;
+}
+
+
+  /*\ Message Box \*/
+
+#box {
+  width: 250px;
+  height: 160px;
+  overflow: hidden;
+  padding: 10px;
+
+  overflow-y: scroll;
+
+  border: 3px solid;
+  border-color: black;
+  border-radius: 7px;
+
+  flex-direction: row;
+  position: absolute;
+  top: 0px; left: 85px;
+}
+
+#message {
+  padding: 10px;
+
+}
+
+.text {
+  padding: 10px;
+
+  border-bottom: 1px solid black;
+
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+
+  /*\ Inbox \*/
+
+#selection {
+  width: 50px;
+  height: 145px;
+
+  top: 7px;
+  position: relative;
+  border-right: 1px solid black;
+
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+
+  display: flex;
+}
+
+.icons {
+  position: relative;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.outline {
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+
+  transition: width 1000ms;
+}
+
+.outline:hover {
+  background-color: grey;
+  width: 50px;
+}
+
